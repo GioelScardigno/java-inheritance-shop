@@ -35,4 +35,11 @@ public class Cuffie extends Prodotto {
 
     }
 
+    @Override
+    public String toString(){
+
+        return super.toString() + "\nColore: " + colore + "\n" + mostraMetodoConnessione();
+
+    }
+
 }

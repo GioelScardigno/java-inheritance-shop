@@ -35,4 +35,11 @@ public class Televisore extends Prodotto {
 
     }
 
+    @Override
+    public String toString(){
+
+        return super.toString() + "\n Dimensioni schermo: " + dimensioni + "\n" + mostraSmart();
+        
+    }
+
 }

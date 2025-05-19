@@ -38,9 +38,8 @@ public class Prodotto {
    }
 
     public String mostraNomeCompleto(){
-
-        String codiceNome = "Nome Completo: " + Integer.toString(codice) + "-" + nome.replace(" ", "-");
-        return codiceNome;
+     
+        return toString();
 
     }
     
@@ -63,6 +62,12 @@ public class Prodotto {
         String descrizioneStr = "Descrizione prodotto: " + descrizione;
         return descrizioneStr;
 
+    }
+
+    @Override
+    public String toString(){
+        String codiceNome = "Nome Completo: " + Integer.toString(codice) + "-" + nome.replace(" ", "-");
+        return codiceNome;
     }
 
 }
