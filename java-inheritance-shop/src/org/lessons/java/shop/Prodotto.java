@@ -13,7 +13,7 @@ public class Prodotto {
      public Prodotto(String nome, String descrizione, double prezzo, double iva){
 
         Random randomNumberGenerator = new Random();
-        codice = randomNumberGenerator.nextInt(1000);
+        codice = randomNumberGenerator.nextInt(2001);
         
         this.nome = nome;
         this.descrizione = descrizione;
@@ -42,11 +42,17 @@ public class Prodotto {
         return toString();
 
     }
+
+     public static String codicePadLeft(int codice){
+
+        return String.format("%04d", codice);
+
+    }
     
     public String mostraCodice(){
 
-        String codiceStr = "Codice prodotto: " + Integer.toString(codice);
-        return codiceStr;
+        
+        return "Codice prodotto: " + codicePadLeft(codice);
 
     }
 
@@ -64,9 +70,10 @@ public class Prodotto {
 
     }
 
+
     @Override
     public String toString(){
-        String codiceNome = "Nome Completo: " + Integer.toString(codice) + "-" + nome.replace(" ", "-");
+        String codiceNome = "Nome Completo: " + (codicePadLeft(codice)) + "-" + nome.replace(" ", "-");
         return codiceNome;
     }
 

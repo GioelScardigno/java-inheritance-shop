@@ -7,6 +7,7 @@ public class Test {
         Smartphone iphone = new Smartphone("Iphone", "Smartphone Apple di ultima generazione", 1200, 22, "1946583530574", 2);
 
         System.out.println(iphone);
+        System.out.println(iphone.mostraCodice());
 
 
 
@@ -27,6 +28,15 @@ public class Test {
         Cuffie sony = new Cuffie("WH-CH720N", "Cuffie wireless Overear per la massima qualità e per il massimo comfort", 70.00, 22, "nero opaco", true);
 
         System.out.println(sony);
+
+
+        System.out.println(); //spazio
+
+
+
+        
+
+
 
     }
 
